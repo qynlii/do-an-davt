@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dự án viễn thông nâng cao</title>
+</head>
+<body>
+	<table width = "1024" border ="0" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<td width="300">
+				<img src="./images/logo.png">
+			</td>
+			<td bgcolor="#EEEEEE">
+				<h1>
+					<font color="blue">
+						<b>DỰ ÁN KỸ THUẬT NÂNG CAO (VIỄN THÔNG)</b>
+					</font>
+				</h1>
+			</td>
+		</tr>
+	</table>
+		<table width = "1024" bgcolor="#EEEEEE" border ="0" cellpadding="0" cellspacing="0" align="center">
+			<br>
+		<tr>
+			<td align="center" bgcolor="#00FF00">
+				<h1>
+					<font size="22">
+						Đề tài: Điều khiển đèn bằng cảm biến
+					</font>
+				</h1>
+				<h2>
+					<font color="red">
+						<b>Thực hiện: Nhóm 3</b>
+					    <br>
+					     GVHD: Mạc Đức Dũng
+					</font>
+				</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="./images/bongden.png">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h1>
+					<font color="#800000">
+						<b><u>Giới thiệu thành viên nhóm 3</b></u>
+					</font>
+				</h1>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<img src="./images/thanhvien.png">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>
+					<font color="#800000">
+						<u>Ưu điểm - Lý do chọn đề tài</u>
+					</font>
+				</h2>
+				<ul>
+					<li>Gọn gàng và tiện lợi:</li>
+					<li>An toàn</li>
+					<li>Có thể tái sử dụng</li>
+					<li>Có thể điều khiển được từ xa</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>
+					<font size="6">
+						<b>Tiến hành thực hiện</b>
+					</font>
+				</h2>
+				<h3>
+					<font color="#800000">
+						<u>Sơ đồ khối</u>
+					</font>
+				</h3>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<img src="./images/sodokhoi.png" width="900">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>
+					<font color="#800000">
+						<u>Sơ đồ nguyên lý các khối:</u>
+					</font>
+				</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table align="center" width = "1024" border="1" bgcolor="#EEEEEE" border ="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td align="center" width="200">
+							<h3>Khối nguồn</h3>
+						</td>
+						<td align="center">
+							<img src="./images/khoinguon.png">
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><h3>Khối thu</h3></td>
+						<td align="center">
+							<img src="./images/khoithu.png">
+							<p>
+								<b>Sử dụng con mắt thu 1838 để nhận tín hiệu từ remote và truyền tín hiệu ra từ chân out để đến chân 2 của IC 555</b>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><h3>Khối tạo xung</h3></td>
+						<td align="center">
+							<img src="./images/khoitaoxung.png">
+								<h4>
+									Khi nhận dược tín hiệu truyền đến của bộ thu đến chân 2 của IC 555 thì Ic sẽ tạo ra 1 xung vuông cấp cho chân 3 của IC 4017.
+								</h4>
+								<h4>
+									Biến trở nhằm tăng hay chậm tốc độ truyền xung của IC 555 cấp cho IC 4017.
+								</h4>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><h3>Khối điều khiển</h3></td>
+						<td align="center">
+							<img src="./images/khoidieukhien.png">
+							<p><b>IC 4017 hoạt động bởi xung kích cạnh lên từ IC555 cấp vào chân CLk(chân 14), chân 13 (chân E nối mass) để cho IC hoạt động,chân MR là chân RESET khi ta cấp cho ngõ ra Q0 là mức 1 thì các ngõ ra còn lại ở mức 0. Chân Mr nối ở chân Q4 để khống chế lượt đếm.
+							</p></b>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><h3>Khối tải</h3></td>
+						<td align="center">
+							<img src="./images/khoitai.png">
+							<p><b>Các chân Q ngõ ra của Ic 4017 đi đến chỗ BJT (NPN)  để kích cho relay hoạt động và làm cho đèn sáng
+							</b></p>
+						</td>
+					</tr>
+					<tr>
+						<td align="center"><h3>Sơ đồ hoàn chỉnh</h3></td>
+						<td align="center">
+							<img src="./images/sodonguyenly.png" width="800">
+						</td>
+					</tr>
+					</table>
+			</td>
+		</tr>
+		<tr>
+			<table width = "1310" bgcolor="#EEEEEE" border ="0" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+		            <td width="600">
+		            	<h2>
+		            		<font size="4" color="#800000">
+		            			<u>Sơ đồ mạch in</u>
+		            		</font>
+		            	</h2>
+		            </td>			
+				</tr>
+				<tr>
+					<td align="center">
+						<h3>Mạch in hệ thống</h3>
+						<img src="./images/machin1.png">
+						<h3>Mạch in nguồn</h3>
+						<img src="./images/machin2.png">
+					</td>
+				</tr>
+				    <td>
+		            	<h2>
+		            		<font size="4" color="#800000">
+		            			<u>Vẽ mạch 3D</u>
+		            		</font>
+		            	</h2>
+		            </td>		
+				<tr>
+					<td align="center">
+						<h3>Mạch 3D hệ thống</h3>
+						<img src="./images/3dhethong.png">
+						<h3>Mạch 3D nguồn</h3>
+						<img src="./images/3dnguon.png">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2>
+							<font color="#800000">
+								<u>Những hạn chế của hệ thống này:</u>
+							</font>
+						</h2>
+					    <ul>
+		                    <li>Chỉ có thể truyền qua đường thẳng</li>
+	                    	<li>Cảm biến quá nhạy</li>
+	                    </ul>
+	                    <h2>
+	                    	<font color="#800000">
+	                    		<u>Phương hướng phát triển sau này</u>
+	                    	</font>
+	                    </h2>
+	                    <ul>
+	                    	<li>Thêm chế độ hẹn giờ</li>
+	                    	<li>Kết hợp IOTs</li>
+	                    </ul>
+					</td>
+				</tr>		
+			    <tr>
+			        <td align="center">
+				        <h1>
+					        <font color="red" size="24">
+					        	<i>Cảm ơn thầy và các bạn đă ghé thăm</i>
+					        </font>
+			        	</h1>
+	        		</td>
+	        	</tr>            	
+			</table>
+		</tr>
+	</table>
+</body>
+</html>
+
+						
+					
